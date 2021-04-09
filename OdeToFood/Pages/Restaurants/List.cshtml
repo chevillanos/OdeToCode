@@ -11,7 +11,7 @@
             <input type="search" asp-for="SearchTerm" name="searchTerm" class="form-control" />
             <div class="input-group-append">
                 <button class="btn btn-outline-secondary">
-                    <i class="fa fa-search" ></i>
+                    <i class="fa fa-search"></i>
                 </button>
             </div>
         </div>
@@ -30,8 +30,11 @@
                     <i class="fa fa-search-plus" aria-hidden="true"></i>
                 </a>
             </td>
+            <td>
+                <a asp-page="./Edit" asp-route-restaurantId="@restaurant.Id" class="btn btn-lg">
+                    <i class="fa fa-pencil" aria-hidden="true"></i>
+                </a>
+            </td>
         </tr>
     }
 </table>
-
-<div>@Model.Message</div>

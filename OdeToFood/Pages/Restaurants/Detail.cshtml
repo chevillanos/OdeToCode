@@ -6,14 +6,16 @@
 }
 
 <h2>@Model.Restaurant.Name</h2>
-<div>
-    Id: @Model.Restaurant.Id
-</div>
-<div>
-    Location: @Model.Restaurant.Location
-</div>
-<div>
-    Cuisine: @Model.Restaurant.Cuisine
+<div class="form-group">
+    <div>
+        Id: @Model.Restaurant.Id
+    </div>
+    <div>
+        Location: @Model.Restaurant.Location
+    </div>
+    <div>
+        Cuisine: @Model.Restaurant.Cuisine
+    </div>
 </div>
 
 <a asp-page="./List" class="btn btn-outline-secondary">All Restaurants</a>
